@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "start": "nodemon server.js",
-    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
+    "heroku-postbuild": "cd client && yarn && npm run build"
   },
   "dependencies": {
     "cors": "^2.8.5",
