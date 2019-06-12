@@ -9,7 +9,7 @@
   },
   "scripts": {
     "start": "nodemon server.js",
-    "heroku-postbuild": "cd client && yarn && npm run build"
+    "heroku-postbuild": "cd client && yarn && yarn run build"
   },
   "dependencies": {
     "cors": "^2.8.5",

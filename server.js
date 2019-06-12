@@ -42,10 +42,11 @@ app.get('/spellcheck', (req, res, next) => {
   });
 });
 
-app.get('/', (req, res, next) => {
+app.get('*', (req, res, next) => {
   res.sendFile(path.join(__dirname + '/client/build/index.html'));
 });
 
-app.listen(4000, () => {
-  console.log('now listening on port 4000.');
-});
+const port = process.env.PORT || 5000;
+app.listen(port);
+
+console.log(`Password generator listening on ${port}`);
