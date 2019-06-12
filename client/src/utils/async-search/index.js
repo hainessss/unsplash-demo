@@ -2,7 +2,7 @@ import { Subject, from } from 'rxjs';
 import { debounceTime, distinctUntilChanged, switchMap, filter, map } from 'rxjs/operators';
 
 const spellcheck = ({query}) => {
-  return fetch(`http://localhost:3000/spellcheck?query=${query}`).then(response => response.json());
+  return fetch(`/spellcheck?query=${query}`).then(response => response.json());
 };
 
 export default function AsyncSearchStream(query) {

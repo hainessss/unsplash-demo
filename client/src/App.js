@@ -11,11 +11,11 @@ import AsyncSearchStream from './utils/async-search';
 import get from 'lodash/get';
 
 const fetchPhotos = () => {
-  return fetch('http://localhost:3000/photos').then(response => response.json());
+  return fetch('/photos').then(response => response.json());
 }
 
 const searchPhotos = ({query}) => {
-  return fetch(`http://localhost:3000/photos/search?query=${query}`).then(response => response.json());
+  return fetch(`/photos/search?query=${query}`).then(response => response.json());
 }
 
 let searchStream;
