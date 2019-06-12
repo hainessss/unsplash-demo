@@ -1,0 +1,22 @@
+{
+  "name": "appstem",
+  "version": "1.0.0",
+  "main": "server.js",
+  "author": "alex haines",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon server.js",
+    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "isomorphic-unfetch": "^3.0.0",
+    "lodash": "^4.17.11",
+    "word-list": "^3.0.0"
+  },
+  "devDependencies": {
+    "dotenv": "^8.0.0",
+    "nodemon": "^1.19.1"
+  }
+}
