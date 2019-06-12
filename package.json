@@ -4,6 +4,9 @@
   "main": "server.js",
   "author": "alex haines",
   "license": "MIT",
+  "engines": {
+    "yarn": "1.16.0"
+  },
   "scripts": {
     "start": "nodemon server.js",
     "heroku-postbuild": "cd client && yarn && npm run build"
